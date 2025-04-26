@@ -9,7 +9,7 @@ LogMap 3.0 ingests six days of real AIS data, filters to your region, builds a g
 
 ---
 
-## 🚀 Features
+## Features
 
 - **Data Pipeline**: Raw CSV → Region filter → NetworkX graph  
 - **Simulation**: JSON-driven perturbations + Dijkstra/A* rerouting  
@@ -19,7 +19,7 @@ LogMap 3.0 ingests six days of real AIS data, filters to your region, builds a g
 
 ---
 
-## 🛠️ Getting Started
+
 
 1. **Clone & preprocess data**  
    ```bash
