@@ -1,0 +1,15 @@
+{
+    "name": "logmap-3.0",
+    "version": "1.0.0",
+    "private": true,
+    "scripts": {
+      "preprocess": "bash data/scripts/preprocess.sh",
+      "backend": "uvicorn backend.app:app --reload",
+      "frontend": "next dev frontend",
+      "start": "docker-compose up --build",
+      "test:backend": "pytest",
+      "test:frontend": "cd frontend && npm test"
+    },
+    "dependencies": {},
+    "devDependencies": {}
+  }  

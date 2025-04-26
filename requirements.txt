@@ -1,0 +1,25 @@
+# FastAPI: web framework for backend API
+fastapi==0.95.0
+
+# Uvicorn: ASGI server for running FastAPI
+uvicorn[standard]==0.22.0
+
+# pandas: data loading & filtering of AIS CSVs
+pandas==2.1.0
+
+# networkx: build and query vessel-movement graph
+networkx==3.1
+
+# reportlab: generate PDF Climate Impact Reports
+reportlab==3.6.12
+
+# matplotlib: create charts (bar/pie) for PDFs
+matplotlib==3.7.1
+
+# python-dotenv: load environment variables from .env files
+python-dotenv==1.0.0
+
+# pytest: backend testing framework
+pytest==7.4.0
+
+openai==0.27.0  # For OpenAI API integration

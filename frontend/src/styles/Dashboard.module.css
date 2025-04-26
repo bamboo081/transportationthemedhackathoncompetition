@@ -1,0 +1,22 @@
+/* frontend/src/styles/Dashboard.module.css */
+
+.container {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .sidebar {
+    width: 300px;
+    padding: 16px;
+    background: #fafafa;
+    overflow-y: auto;
+  }
+  
+  .mapContainer {
+    flex: 1;
+  }
+  
+  .error {
+    color: #c00;
+  }
+  

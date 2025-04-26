@@ -1,0 +1,27 @@
+venv/
+.env
+__pycache__/
+*.pyc
+.env.local# .gitignore
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.env
+venv/
+data/processed/
+data/raw/
+reports/
+*.pkl
+
+# Node/Next.js
+node_modules/
+frontend/.next/
+frontend/out/
+frontend/.env.local
+
+# Docker
+*.log
+*.tar

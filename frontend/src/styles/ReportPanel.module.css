@@ -1,0 +1,17 @@
+/* frontend/src/styles/ReportPanel.module.css */
+
+.reportButton {
+    margin-top: 12px;
+    padding: 8px 16px;
+    border: none;
+    background: #333;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .reportButton:disabled {
+    background: #666;
+    cursor: not-allowed;
+  }
+  

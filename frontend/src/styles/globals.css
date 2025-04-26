@@ -1,0 +1,13 @@
+/* frontend/src/styles/globals.css */
+
+html, body, #__next {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: sans-serif;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  

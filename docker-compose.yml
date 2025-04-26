@@ -1,0 +1,37 @@
+# docker-compose.yml
+version: "3.8"
+
+services:
+  redis:
+    image: redis:7-alpine
+    restart: unless-stopped
+    ports:
+      - "6379:6379"
+
+  backend:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    volumes:
+      - ./:/app:ro
+    environment:
+      # If you later add Redis caching you can wire it here:
+      - REDIS_URL=redis://redis:6379
+      # (Your service reads SCENARIOS_DIR, DATA_RAW_DIR via config.py constants)
+    ports:
+      - "8000:8000"
+    depends_on:
+      - redis
+
+  frontend:
+    build:
+      context: .
+      dockerfile: frontend/Dockerfile
+    environment:
+      # Inject your real tokens at runtime or via .env file:
+      - NEXT_PUBLIC_MAPBOX_TOKEN=${MAPBOX_TOKEN}
+      - NEXT_PUBLIC_API_BASE_URL=http://backend:8000
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
