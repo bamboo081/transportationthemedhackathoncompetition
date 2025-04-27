@@ -36,3 +36,5 @@ LogMap 3.0 ingests six days of real AIS data, filters to your region, builds a g
       1. filter_region.py
       2. build_graph.py
    You must run these in the exact same order in order for the script to work. The processed data uploads to the processed subfolder in the data folder, which is used by other files in the project.
+
+4. **Downloading the necessarry libraries**
